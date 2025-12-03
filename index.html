@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Brasileiro - Tradição e Sabor</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Bootstrap (mantido, caso queira usar depois) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- CABEÇALHO COM MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="header-container">
+            <h1>Café_BR</h1>
+
+            <!-- Botão hambúrguer (mobile) -->
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#video" class="nav-link">Vídeo</a></li>
+                    <li><a href="#lista" class="nav-link">Lista</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE APRESENTAÇÃO -->
+    <section id="sobre" class="apresentacao">
+        <h2>Sobre o Café Brasileiro</h2>
+        <div class="conteudo-apresentacao">
+            <div class="texto-intro">
+                <p>O Brasil é o maior produtor de café do mundo, responsável por cerca de 30% da produção global. 
+                Nosso café é reconhecido internacionalmente pela sua qualidade excepcional e sabor único. 
+                Desde as montanhas de Minas Gerais até as terras do Espírito Santo, cada grão carrega a 
+                tradição e o amor pela terra brasileira.</p>
+                <p>Descubra a rica história e cultura do café que conquista paladares ao redor do mundo.</p>
+            </div>
+            <div class="imagem-intro">
+                <img src="/images/plantacao_cafe.jpg" alt="Plantação de café brasileiro nas montanhas">
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA DE IMAGENS -->
+    <section id="galeria" class="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="container-imagens">
+            <div class="item-galeria">
+                <img src="/images/cafe_torrado.jpg" alt="Grãos de café torrados">
+                <p>Grãos de café arábica brasileiros</p>
+            </div>
+            <div class="item-galeria">
+                <img src="/images/chicara_cafe.jpg" alt="Xícara de café">
+                <p>O famoso cafezinho brasileiro</p>
+            </div>
+            <div class="item-galeria">
+                <img src="/images/colheita_cafe.jpg" alt="Colheita de café">
+                <p>Colheita manual tradicional</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE VÍDEO -->
+    <section id="video" class="secao-video">
+        <h2>Conheça Mais Sobre o Café</h2>
+        <div class="container-video">
+            <video controls width="600" height="400">
+                <source src="/videos/video_cafe (1).mp4" type="video/mp4">
+                <track src="/videos/video_cafe (1).mp4" kind="subtitles" srclang="pt-br" label="português" default>
+            </video>
+            <figcaption>Documentário sobre a produção de café no Brasil - Do grão à xícara</figcaption>
+        </div>
+    </section>
+
+    <!-- SEÇÃO COM LISTA -->
+    <section id="lista" class="secao-lista">
+        <h2>Principais Regiões Produtoras</h2>
+        <div class="container-lista">
+            <ol>
+                <li>Minas Gerais - Responsável por 50% da produção nacional</li>
+                <li>Espírito Santo - Famoso pelo café conilon</li>
+                <li>São Paulo - Tradicional região cafeeira</li>
+                <li>Bahia - Crescimento na produção de cafés especiais</li>
+                <li>Rondônia - Importante produtor da região Norte</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- TABELA DE INFORMAÇÕES -->
+    <section id="tabela" class="secao-tabela">
+        <h2>Tipos de Café Brasileiro</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Região</th>
+                    <th>Características</th>
+                    <th>Altitude (m)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arábica</td>
+                    <td>Minas Gerais</td>
+                    <td>Sabor suave e aromático</td>
+                    <td>800-1200</td>
+                </tr>
+                <tr>
+                    <td>Conilon</td>
+                    <td>Espírito Santo</td>
+                    <td>Mais forte e amargo</td>
+                    <td>0-800</td>
+                </tr>
+                <tr>
+                    <td>Bourbon</td>
+                    <td>São Paulo</td>
+                    <td>Doçura natural</td>
+                    <td>1000-1400</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="formulario-contato">
+        <h2>Entre em Contato</h2>
+        <form id="contato-form">
+            <div class="campo-formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="btn-topo" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2024 Café Brasileiro. Todos os direitos reservados.</p>
+        <p>Contato: contato@cafebrasileiro.com.br | Telefone: (11) 1234-5678</p>
+    </footer>
+
+    <!-- JavaScript do site -->
+    <script src="/script.js"></script>
+</body>
+</html>
